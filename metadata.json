@@ -1,0 +1,34 @@
+{
+  "name": "icann-atlas_exporter",
+  "version": "0.0.1",
+  "author": "b4ldr",
+  "summary": "A module for managing the atlas_exporter file on linux systems",
+  "license": "Apache-2.0",
+  "source": "https://github.com/icann-dns/puppet-atlas_exporter",
+  "project_page": "https://github.com/icann-dns/puppet-atlas_exporter",
+  "issues_url": "https://github.com/icann-dns/puppet-atlas_exporter/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 8.1.4 <10.0.0"
+    },
+    {
+      "name": "puppet-extlib",
+      "version_requirement": ">= 7 <8"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "22.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 7.24 < 9.0.0"
+    }
+  ]
+}
