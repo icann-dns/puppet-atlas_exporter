@@ -2,13 +2,13 @@
 # @url https://github.com/czerwonk/atlas_exporter
 # @param atlas_measurements A hash of measurment id and the timeout for the measurement.
 #   The exporter will export the latest value for each measurement ID.
-# @param exporter_port The port on which the exporter should listen.
+# @param port The port on which the exporter should listen.
 # @param config_file The path to the configuration file for the exporter.
 # @param filter_invalid Whether to filter out invalid measurements
 # @param histogram_buckets A hash of histogram type and the buckets to use for that histogram
 class atlas_exporter (
   Hash[Integer, Atlas_exporter::Timeout]        $atlas_measurements,
-  Stdlib::Port                                  $exporter_port     = 9400,
+  Stdlib::Port                                  $port              = 9400,
   Stdlib::Unixpath                              $config_file       = '/etc/prometheus-atlas-exporter/config.yaml',
   Boolean                                       $filter_invalid    = true,
   Hash[Atlas_exporter::Histogram, Array[Float]] $histogram_buckets = {}
