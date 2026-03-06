@@ -1,6 +1,6 @@
 {
   "name": "icann-atlas_exporter",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "b4ldr",
   "summary": "A module for managing the atlas_exporter file on linux systems",
   "license": "Apache-2.0",
